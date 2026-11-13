@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+:root{--blue:#71366f;--blue2:#92518d;--pale:#f4eaf4;--ink:#352638;--muted:#796d7b;--line:#eadfea;--bg:#faf7fb;--gold:#d6ad4d;--gold-soft:#fbf3df;--red:#d83b35}
+*{box-sizing:border-box}body{margin:0;font-family:Cairo,Tahoma,sans-serif;background:var(--bg);color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer}.hidden{display:none!important}
+.login-wrap{min-height:100vh;display:grid;place-items:center;padding:20px;background:linear-gradient(135deg,#f0e3f0,#fffaf0)}.login-card{width:min(420px,100%);background:white;padding:34px;border-radius:22px;box-shadow:0 18px 55px #173c6818;text-align:center}.logo{margin:auto;background:linear-gradient(140deg,var(--blue),#a46a9e);color:white;width:68px;height:68px;border-radius:20px;display:grid;place-items:center;font-size:36px;font-weight:800}.login-card h1{margin:12px 0 0}.login-card p,.login-card small{color:var(--muted)}label{display:block;text-align:right;font-size:14px;font-weight:700;margin:14px 0}input,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 12px;margin-top:6px;background:#fff;color:var(--ink);outline:none}input:focus,select:focus{border-color:var(--blue2);box-shadow:0 0 0 3px #92518d24}
+.primary,.secondary,.danger{border:0;border-radius:10px;padding:10px 16px;font-weight:700}.primary{background:var(--blue);color:white}.primary:hover{background:#592957}.secondary{background:var(--pale);color:var(--blue)}.danger{background:#fff0f0;color:#c33}.full{width:100%;margin:14px 0}
+.app{min-height:100vh;display:flex}.sidebar{width:250px;background:#fff;border-left:1px solid var(--line);padding:20px 14px;display:flex;flex-direction:column;flex-shrink:0}.brand{display:flex;align-items:center;gap:11px;padding:5px 8px 24px}.brand .logo{margin:0}.logo.small{width:43px;height:43px;border-radius:13px;font-size:24px}.brand small{display:block;color:var(--muted);font-size:11px}nav{display:grid;gap:5px}.nav{border:0;background:transparent;text-align:right;padding:12px;border-radius:10px;color:#66586a;font-weight:600}.nav span{margin-right:9px}.nav.active,.nav:hover{background:var(--pale);color:var(--blue)}.logout{margin-top:auto;background:#fff0f0;color:#b43d3d;border:0;padding:12px;border-radius:10px}
+.main{flex:1;min-width:0}.topbar{height:76px;background:white;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 28px;gap:15px;position:sticky;top:0;z-index:3}.topbar small{display:block;color:var(--muted);font-size:11px}.user{margin-right:auto;display:flex;align-items:center;gap:9px;font-size:13px}.user span{background:var(--pale);color:var(--blue);border-radius:50%;width:35px;height:35px;display:grid;place-items:center;font-weight:800}.menu{display:none;border:0;background:var(--pale);color:var(--blue);padding:8px 11px;border-radius:8px}.content{padding:26px;max-width:1500px;margin:auto}footer{text-align:center;color:#9a8d9b;font-size:11px;padding:20px}
+.welcome{background:linear-gradient(110deg,#653063,#92518d);color:white;padding:25px 28px;border-radius:18px;display:flex;align-items:center;justify-content:space-between;gap:15px}.welcome h2{margin:0 0 5px}.welcome p{margin:0;color:#f4e8f2}.welcome .cap{font-size:58px;opacity:.9}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin:20px 0}.stat,.panel{background:white;border:1px solid var(--line);border-radius:15px;padding:18px}.stat .label{color:var(--muted);font-size:13px}.stat strong{display:block;font-size:28px;margin-top:5px;color:var(--blue)}.panel h3{margin:0 0 15px}.grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.quick button{border:1px solid var(--line);background:#fdfafd;border-radius:12px;padding:15px;color:var(--blue);font-weight:700;text-align:right}.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px;flex-wrap:wrap}.section-head h2{margin:0;font-size:21px}.tools{display:flex;gap:8px;align-items:center}.tools input{width:220px;margin:0}.table-wrap{overflow:auto;background:white;border:1px solid var(--line);border-radius:14px}table{width:100%;border-collapse:collapse;min-width:620px}th,td{padding:12px 14px;text-align:right;border-bottom:1px solid var(--line);font-size:13px}th{background:#f8f1f8;color:#6e5a70}tr:last-child td{border-bottom:0}.actions{display:flex;gap:6px}.actions button{border:0;border-radius:7px;padding:6px 9px;font-size:12px}.empty{text-align:center;color:var(--muted);padding:30px}.modal-back{position:fixed;inset:0;background:#10243c66;display:grid;place-items:center;padding:15px;z-index:10}.modal{background:white;border-radius:16px;padding:22px;width:min(500px,100%);max-height:90vh;overflow:auto}.modal h3{margin-top:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}.form-actions{display:flex;gap:8px;justify-content:flex-start;margin-top:18px}.toast{position:fixed;bottom:22px;left:22px;background:#4c294d;color:white;padding:11px 18px;border-radius:10px;opacity:0;transform:translateY(10px);transition:.2s;z-index:20}.toast.show{opacity:1;transform:none}.badge{background:#e8f7ef;color:#16804b;padding:4px 9px;border-radius:20px;font-size:11px}
+@media(max-width:900px){.sidebar{position:fixed;right:-260px;top:0;bottom:0;z-index:8;transition:.25s;box-shadow:0 0 0 100vmax transparent}.sidebar.open{right:0;box-shadow:0 0 0 100vmax #10243c55}.menu{display:block}.content{padding:17px}.stats{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}}
+@media(max-width:520px){.topbar{padding:0 13px}.stats{gap:9px}.stat{padding:13px}.stat strong{font-size:23px}.welcome{padding:19px}.welcome .cap{font-size:38px}.tools{width:100%}.tools input{width:100%}.form-grid{grid-template-columns:1fr}.user{font-size:11px}}
+
+.school-logo{display:block;width:112px;height:112px;object-fit:contain;margin:0 auto 8px;border-radius:14px;background:#fff}
+.small-logo{width:48px;height:48px;object-fit:contain;margin:0;border-radius:9px}
+footer a{color:#71366f;text-decoration:none}
+
+.designer-credit{margin-top:12px;color:var(--blue);font-weight:800;font-size:13px}
+.carousel-caption{background:#10243c99;border-radius:12px;padding:8px}
+.carousel-caption h5{margin:0;font-family:Cairo,Tahoma,sans-serif}
+
+
+/* هوية بصرية متناسقة مع شعار مدارس فجر الاتحاد */
+.login-card{border:1px solid #eadfea;border-top:4px solid var(--gold)}
+.login-card h1{color:var(--blue)}
+.primary{background:linear-gradient(135deg,#71366f,#92518d);box-shadow:0 4px 12px #71366f20}
+.primary:hover{background:linear-gradient(135deg,#592957,#794477)}
+.secondary{background:var(--gold-soft);color:#795b19;border:1px solid #ead7a8}
+.sidebar{border-left:1px solid #eadfea;background:linear-gradient(180deg,#fff 0%,#fcf8fc 100%)}
+.brand{border-bottom:1px solid #f0e5ef;margin-bottom:14px}
+.brand b{color:#63305f}
+.nav.active,.nav:hover{background:linear-gradient(90deg,#f5eaf5,#fbf5e6);color:#71366f;box-shadow:inset -3px 0 0 var(--gold)}
+.topbar{box-shadow:0 2px 12px #48284908}
+.welcome{background:linear-gradient(110deg,#653063 0%,#92518d 72%,#b17c9f 100%);border-bottom:4px solid var(--gold);box-shadow:0 10px 24px #71366f18}
+.stat,.panel{box-shadow:0 4px 16px #48284908}
+.stat strong{color:#71366f}
+th{background:#f7eff7;color:#6e526e}
+input:focus,select:focus{border-color:var(--blue2);box-shadow:0 0 0 3px #92518d24}
+.logout{background:#fff0ef;color:#b63230;border:1px solid #f4d3d1}
+.badge{background:#f1f8f2;color:#28734b}
+.designer-credit{color:#71366f}
+footer strong{color:#71366f}
+footer a:hover{color:#a27628;text-decoration:underline}
+.school-logo{filter:drop-shadow(0 3px 8px #3d243b12)}
+.carousel-caption{border-bottom:2px solid var(--gold)}
